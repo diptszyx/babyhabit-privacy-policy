@@ -32,17 +32,10 @@
 
 <p>This policy explains what data BabyHabit ("the app") collects, how it is used, and how you can control it. BabyHabit is a parenting app to help you track your child's daily care, developmental milestones, mood, and growth activities. It is designed to be used by parents/caregivers, not directly by children.</p>
 
-<h2>1. Data we collect</h2>
+<p>BabyHabit has no account system and no backend server. There is nothing to sign up for, and nothing to sign into — the app works fully offline, and everything you enter stays on your device.</p>
 
-<h3>Account data</h3>
-<p>When you create an account, we collect:</p>
-<ul>
-  <li>Email address</li>
-  <li>Password (stored as a hash — we never store or see your plain-text password)</li>
-  <li>Name</li>
-  <li>Locale (language preference)</li>
-  <li>Avatar photo, if you choose to upload one (via your device's camera or photo library)</li>
-</ul>
+<h2>1. Data we collect</h2>
+<p>All data below is stored <strong>only on your device</strong> (local storage). None of it is transmitted to us or any server — we have no server that stores it.</p>
 
 <h3>Child profile data</h3>
 <p>For each child profile you create:</p>
@@ -54,6 +47,9 @@
   <li>Avatar photo, if you choose to upload one</li>
 </ul>
 
+<h3>Parent profile data</h3>
+<p>Display name, family role, and a short bio, if you choose to fill them in — used only to personalize the app's UI.</p>
+
 <h3>Daily tracking data you log</h3>
 <ul>
   <li>Daily care entries (feeding, sleep, diaper, activity logs)</li>
@@ -62,51 +58,51 @@
   <li>Socratic Play activity progress and your written notes</li>
 </ul>
 
-<h3>Family sharing</h3>
-<p>If you invite another caregiver to your child's "Care Circle," their email and role are stored to manage shared access.</p>
-
 <h3>Device permissions</h3>
 <ul>
   <li><strong>Camera / Photo Library</strong> — only used when you choose to set a profile avatar. Photos are not accessed otherwise.</li>
-  <li><strong>Microphone</strong> — only used if you record voice notes within the app. Voice recordings are processed on your device and are not uploaded to our servers or any third party.</li>
+  <li><strong>Microphone</strong> — only used if you record voice notes within the app. Voice recordings are processed on your device and are never uploaded anywhere.</li>
   <li><strong>Notifications</strong> — used to send you local reminders (e.g. daily care reminders). We do not register your device for push notifications from a server.</li>
+  <li><strong>Biometrics (Face ID / Fingerprint)</strong> — if you turn on the optional app lock in Settings, your device's own biometric system checks you, as it does for other apps. We never receive or store biometric data ourselves.</li>
 </ul>
 
 <h3>Analytics and crash reporting</h3>
 <ul>
-  <li>We use <strong>PostHog</strong> to understand feature usage (e.g. which screens are viewed, which features are used, session length). This is off by default and only active if you opt in via Settings. We do not send your name, email, or child's data to PostHog — only anonymous usage events tied to a random session ID.</li>
-  <li>We use <strong>Sentry</strong> to automatically collect crash reports and error diagnostics so we can fix bugs. This always runs (not tied to the analytics opt-in toggle) and does not include your name, email, or child's personal data — only technical error data (stack traces, device/OS info).</li>
+  <li>We use <strong>PostHog</strong> to understand feature usage (e.g. which screens are viewed, which features are used, session length). This is off by default and only active if you opt in via Settings. We do not send your name, your child's data, or any content you write to PostHog — only anonymous usage events tied to a random session ID.</li>
+  <li>We use <strong>Sentry</strong> to automatically collect crash reports and error diagnostics so we can fix bugs. This always runs (not tied to the analytics opt-in toggle) and does not include your name or your child's personal data — only technical error data (stack traces, device/OS info).</li>
 </ul>
 
 <h2>2. What we do NOT do</h2>
 <ul>
+  <li>We do not have a server, account system, or login — your data is never uploaded to us.</li>
   <li>We do not sell your data.</li>
   <li>We do not use any third-party advertising SDK.</li>
   <li>We do not use cross-app tracking (no Apple App Tracking Transparency prompt is shown because we don't track you across other apps or websites).</li>
   <li>We do not send your voice recordings anywhere — they stay on your device.</li>
   <li>We do not use any AI/LLM service to process your child's data.</li>
+  <li>We do not share data between devices or people — there is no family-sharing or multi-device sync feature.</li>
 </ul>
 
 <h2>3. How we use your data</h2>
 <ul>
-  <li>To provide the app's core features (tracking, reminders, milestone progress, activity suggestions).</li>
-  <li>To let you share access with trusted caregivers (Care Circle), if you choose to.</li>
+  <li>To provide the app's core features (tracking, reminders, milestone progress, activity suggestions) entirely on your device.</li>
   <li>To diagnose and fix technical problems (crash reports).</li>
   <li>To improve the app based on anonymous usage patterns (only if you opt in).</li>
 </ul>
 
 <h2>4. Data storage and security</h2>
-<p>Your account and child data are stored on our servers, protected by authentication (password hashing, token-based API access). Data you enter locally (before syncing) is also cached on your device.</p>
+<p>All app data lives in local encrypted storage on your device only. There is no account, no server, and no cloud backup — if you uninstall the app or lose your device without exporting your data first, that data cannot be recovered by us, because we never had it.</p>
 
 <h2>5. Your rights</h2>
 <ul>
-  <li><strong>Account deletion:</strong> You can delete your account at any time from Settings. This permanently removes your account and associated child profiles and data from our servers.</li>
+  <li><strong>Export your data:</strong> Settings → "Export Personal Data" lets you download a full JSON copy of everything stored in the app (child profiles, logs, milestones, mood entries, etc.) via your device's share sheet, so you can keep or move your own data.</li>
+  <li><strong>Delete your data:</strong> Settings → "Clear All Data" permanently erases everything stored on your device. Since nothing is stored elsewhere, this is a complete and irreversible deletion.</li>
   <li><strong>Analytics opt-out:</strong> You can turn off usage analytics at any time from Settings.</li>
-  <li>You can request a copy of your data or ask questions about this policy by contacting us (see Contact below).</li>
+  <li>Questions about your data or this policy: contact us (see Contact below).</li>
 </ul>
 
 <h2>6. Children's privacy</h2>
-<p>BabyHabit is intended for use by parents and caregivers, not by children. We do not knowingly collect personal data directly from children. Child profile data (name, birth date, etc.) is entered and controlled by the parent/caregiver account holder.</p>
+<p>BabyHabit is intended for use by parents and caregivers, not by children. We do not knowingly collect personal data directly from children. Child profile data (name, birth date, etc.) is entered and controlled by the parent/caregiver using the app, and stays on that person's device.</p>
 
 <h2>7. Changes to this policy</h2>
 <p>We may update this policy as the app evolves. Material changes will be reflected with an updated "Last updated" date above.</p>
